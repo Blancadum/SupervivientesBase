@@ -1,5 +1,7 @@
 # 🏝️ Supervivientes - Guía Paso a Paso
 
+![Isla Tropical](isla.jpg)
+
 ## 📋 Resumen del Proyecto
 
 Un juego **cooperativo** donde toda la familia intenta sobrevivir en una isla deshabitada:
@@ -330,6 +332,26 @@ Salud general: ~95
 | **Estados** | salud, energía, día | Progreso del juego |
 | **Cooperación** | objetivo común | Cambio de dinámicas |
 | **Scanner** | menú, acciones | Interacción |
+
+---
+
+## 🧪 Pruebas Unitarias (JUnit + JaCoCo)
+
+El proyecto incluye pruebas unitarias automáticas. Para ejecutarlas:
+
+```bash
+# Ejecutar todas las pruebas
+mvn clean test
+
+# Ver reporte de cobertura
+# Se genera en: target/site/jacoco/index.html
+```
+
+**Qué se prueba:**
+- ✅ Clase `Jugador` → ~27 tests
+- ✅ Clase `Isla` → ~35 tests
+
+**Cobertura esperada:** 80%+
 
 ---
 
